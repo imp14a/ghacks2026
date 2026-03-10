@@ -1,0 +1,2142 @@
+[
+    {
+        "name": "Farmacia San Pablo",
+        "address": "5 de Febrero No. 26 y 28, Colonia Centro, C.P. 06060, Alcald\u00eda Cuauht\u00e9moc, Ciudad de M\u00e9xico.",
+        "branch_number": 1,
+        "products": [
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 79,
+                "price": 156
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 60,
+                "price": 50
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 18,
+                "price": 6.8
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 45,
+                "price": 140
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 62,
+                "price": 6.8
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 1,
+                "price": 102
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 59,
+                "price": 128
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 84,
+                "price": 60
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 51,
+                "price": 24
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 77,
+                "price": 130
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 82,
+                "price": 184
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 92,
+                "price": 6.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 34,
+                "price": 5.0
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 71,
+                "price": 7.0
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 75,
+                "price": 92
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 15,
+                "price": 4.4
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 38,
+                "price": 30
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 93,
+                "price": 8.2
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 3,
+                "price": 6.0
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 93,
+                "price": 106
+            }
+        ]
+    },
+    {
+        "name": "Farmacias del Ahorro",
+        "address": "Donceles 85",
+        "branch_number": 2,
+        "products": [
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 72,
+                "price": 7.0
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 65,
+                "price": 6.0
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 63,
+                "price": 30
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 89,
+                "price": 140
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 30,
+                "price": 156
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 84,
+                "price": 102
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 75,
+                "price": 6.8
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 98,
+                "price": 6.0
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 7,
+                "price": 128
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 80,
+                "price": 50
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 66,
+                "price": 130
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 92,
+                "price": 60
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 66,
+                "price": 106
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 11,
+                "price": 5.0
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 27,
+                "price": 96
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 58,
+                "price": 8.2
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 47,
+                "price": 24
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 91,
+                "price": 4.4
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 42,
+                "price": 70
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 18,
+                "price": 6.8
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Benavides",
+        "address": "Av. Universidad No. 1293, Col. del Valle, Benito Ju\u00e1rez, Cdmx, CP. 03240.",
+        "branch_number": 3,
+        "products": [
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 28,
+                "price": 106
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 37,
+                "price": 128
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 79,
+                "price": 130
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 91,
+                "price": 6.8
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 95,
+                "price": 7.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 54,
+                "price": 5.0
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 93,
+                "price": 6.0
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 0,
+                "price": 4.4
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 87,
+                "price": 30
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 5,
+                "price": 140
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 6,
+                "price": 8.2
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 46,
+                "price": 156
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 56,
+                "price": 60
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 39,
+                "price": 184
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 82,
+                "price": 6.0
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 63,
+                "price": 92
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 21,
+                "price": 24
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 44,
+                "price": 6.8
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 20,
+                "price": 96
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 99,
+                "price": 70
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Similares",
+        "address": "Tacuba, 69, Ciudad de M\u00e9xico",
+        "branch_number": 4,
+        "products": [
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 36,
+                "price": 6.8
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 81,
+                "price": 60
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 42,
+                "price": 8.2
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 87,
+                "price": 130
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 1,
+                "price": 24
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 16,
+                "price": 7.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 87,
+                "price": 5.0
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 31,
+                "price": 6.0
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 66,
+                "price": 92
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 84,
+                "price": 184
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 92,
+                "price": 156
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 17,
+                "price": 6.0
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 80,
+                "price": 102
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 88,
+                "price": 96
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 96,
+                "price": 128
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 2,
+                "price": 50
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 68,
+                "price": 6.8
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 8,
+                "price": 30
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 73,
+                "price": 140
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 68,
+                "price": 70
+            }
+        ]
+    },
+    {
+        "name": "Farmacias YZA",
+        "address": "Calle 47 75",
+        "branch_number": 5,
+        "products": [
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 2,
+                "price": 6.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 1,
+                "price": 130
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 5,
+                "price": 5.0
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 72,
+                "price": 60
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 70,
+                "price": 106
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 33,
+                "price": 30
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 91,
+                "price": 50
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 68,
+                "price": 6.0
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 93,
+                "price": 156
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 9,
+                "price": 184
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 37,
+                "price": 140
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 74,
+                "price": 7.0
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 26,
+                "price": 8.2
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 29,
+                "price": 128
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 3,
+                "price": 102
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 65,
+                "price": 6.8
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 53,
+                "price": 24
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 38,
+                "price": 6.8
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 6,
+                "price": 70
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 60,
+                "price": 96
+            }
+        ]
+    },
+    {
+        "name": "Farmacia San Pablo",
+        "address": "Isabel la Cat\u00f3lica No. 92, Colonia Centro, C.P. 06080, Alcald\u00eda Cuauht\u00e9moc, Ciudad de M\u00e9xico.",
+        "branch_number": 6,
+        "products": [
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 83,
+                "price": 5.0
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 20,
+                "price": 30
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 26,
+                "price": 8.2
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 15,
+                "price": 128
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 86,
+                "price": 184
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 51,
+                "price": 156
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 22,
+                "price": 102
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 19,
+                "price": 6.0
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 37,
+                "price": 70
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 24,
+                "price": 92
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 31,
+                "price": 96
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 8,
+                "price": 24
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 1,
+                "price": 106
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 51,
+                "price": 140
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 77,
+                "price": 50
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 22,
+                "price": 6.8
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 88,
+                "price": 6.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 33,
+                "price": 130
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 8,
+                "price": 4.4
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 58,
+                "price": 6.8
+            }
+        ]
+    },
+    {
+        "name": "Farmacias del Ahorro",
+        "address": "Las Cruces 18",
+        "branch_number": 7,
+        "products": [
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 36,
+                "price": 92
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 60,
+                "price": 24
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 27,
+                "price": 6.8
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 39,
+                "price": 30
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 18,
+                "price": 70
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 34,
+                "price": 50
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 75,
+                "price": 106
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 98,
+                "price": 8.2
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 50,
+                "price": 128
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 49,
+                "price": 6.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 99,
+                "price": 130
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 58,
+                "price": 6.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 61,
+                "price": 5.0
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 58,
+                "price": 96
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 98,
+                "price": 184
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 94,
+                "price": 102
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 1,
+                "price": 60
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 68,
+                "price": 4.4
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 85,
+                "price": 140
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 86,
+                "price": 7.0
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Benavides",
+        "address": "Av. Presidente Masaryk #490, Colonia Polanco, Delegaci\u00f3n Miguel Hidalgo, CP. 11560, Mexico, Distrito Federal.",
+        "branch_number": 8,
+        "products": [
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 12,
+                "price": 140
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 49,
+                "price": 102
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 53,
+                "price": 7.0
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 70,
+                "price": 60
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 69,
+                "price": 92
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 81,
+                "price": 6.0
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 44,
+                "price": 106
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 5,
+                "price": 6.8
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 10,
+                "price": 156
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 32,
+                "price": 128
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 87,
+                "price": 8.2
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 63,
+                "price": 6.0
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 75,
+                "price": 6.8
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 98,
+                "price": 184
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 83,
+                "price": 24
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 13,
+                "price": 5.0
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 14,
+                "price": 96
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 90,
+                "price": 4.4
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 66,
+                "price": 70
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 36,
+                "price": 30
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Similares",
+        "address": "Cll. Regina 51, Cuauht\u00e9moc (CDMX)",
+        "branch_number": 9,
+        "products": [
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 52,
+                "price": 128
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 48,
+                "price": 6.0
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 56,
+                "price": 50
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 48,
+                "price": 92
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 63,
+                "price": 60
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 8,
+                "price": 24
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 32,
+                "price": 5.0
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 20,
+                "price": 6.8
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 13,
+                "price": 96
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 40,
+                "price": 130
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 37,
+                "price": 106
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 86,
+                "price": 7.0
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 45,
+                "price": 70
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 83,
+                "price": 184
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 10,
+                "price": 156
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 56,
+                "price": 6.8
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 78,
+                "price": 6.0
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 51,
+                "price": 102
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 45,
+                "price": 8.2
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 81,
+                "price": 30
+            }
+        ]
+    },
+    {
+        "name": "Farmacias YZA",
+        "address": "Calle Jesus Romero Flores #No. 92, Iztapalapa",
+        "branch_number": 10,
+        "products": [
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 62,
+                "price": 130
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 0,
+                "price": 50
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 66,
+                "price": 70
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 97,
+                "price": 6.0
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 59,
+                "price": 7.0
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 6,
+                "price": 140
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 100,
+                "price": 8.2
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 58,
+                "price": 6.8
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 48,
+                "price": 96
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 7,
+                "price": 184
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 63,
+                "price": 6.0
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 13,
+                "price": 128
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 93,
+                "price": 102
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 20,
+                "price": 6.8
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 74,
+                "price": 156
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 49,
+                "price": 60
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 84,
+                "price": 92
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 57,
+                "price": 4.4
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 90,
+                "price": 106
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 23,
+                "price": 24
+            }
+        ]
+    },
+    {
+        "name": "Farmacia San Pablo",
+        "address": "Eje 2 Canal de Norte No. 107, Colonia Morelos, C.P 06200, Alcald\u00eda Cuauht\u00e9moc, Ciudad de M\u00e9xico.",
+        "branch_number": 11,
+        "products": [
+            {
+                "name": "Ibuprofen",
+                "inventory": 87,
+                "price": 60
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 2,
+                "price": 96
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 93,
+                "price": 106
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 61,
+                "price": 184
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 25,
+                "price": 140
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 99,
+                "price": 102
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 97,
+                "price": 30
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 79,
+                "price": 70
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 44,
+                "price": 130
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 98,
+                "price": 156
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 99,
+                "price": 24
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 22,
+                "price": 8.2
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 27,
+                "price": 6.8
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 45,
+                "price": 128
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 31,
+                "price": 92
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 70,
+                "price": 5.0
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 3,
+                "price": 6.0
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 9,
+                "price": 4.4
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 65,
+                "price": 50
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 8,
+                "price": 7.0
+            }
+        ]
+    },
+    {
+        "name": "Farmacias del Ahorro",
+        "address": "Eje Central Lazaro Cardenas 13 Local G",
+        "branch_number": 12,
+        "products": [
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 34,
+                "price": 5.0
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 9,
+                "price": 128
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 75,
+                "price": 156
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 15,
+                "price": 30
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 7,
+                "price": 102
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 6,
+                "price": 92
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 38,
+                "price": 6.0
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 52,
+                "price": 96
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 33,
+                "price": 50
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 79,
+                "price": 24
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 56,
+                "price": 6.8
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 60,
+                "price": 184
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 56,
+                "price": 70
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 68,
+                "price": 4.4
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 2,
+                "price": 106
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 39,
+                "price": 7.0
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 97,
+                "price": 8.2
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 89,
+                "price": 60
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 64,
+                "price": 140
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 76,
+                "price": 6.8
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Benavides",
+        "address": "Av. Insurgentes 197, Roma Norte, Cuauht\u00e9moc, Ciudad de M\u00e9xico, CP 06700.",
+        "branch_number": 13,
+        "products": [
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 7,
+                "price": 4.4
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 22,
+                "price": 5.0
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 29,
+                "price": 6.0
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 95,
+                "price": 8.2
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 40,
+                "price": 6.8
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 87,
+                "price": 96
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 91,
+                "price": 7.0
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 1,
+                "price": 70
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 27,
+                "price": 156
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 22,
+                "price": 130
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 79,
+                "price": 6.8
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 56,
+                "price": 102
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 54,
+                "price": 140
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 69,
+                "price": 6.0
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 84,
+                "price": 60
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 66,
+                "price": 50
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 55,
+                "price": 24
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 12,
+                "price": 30
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 83,
+                "price": 128
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 1,
+                "price": 92
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Similares",
+        "address": "Emiliano Zapata, 59, Ciudad de M\u00e9xico",
+        "branch_number": 14,
+        "products": [
+            {
+                "name": "Ibuprofen",
+                "inventory": 37,
+                "price": 60
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 100,
+                "price": 6.8
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 2,
+                "price": 106
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 97,
+                "price": 30
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 70,
+                "price": 50
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 95,
+                "price": 7.0
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 4,
+                "price": 70
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 39,
+                "price": 92
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 82,
+                "price": 4.4
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 10,
+                "price": 184
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 43,
+                "price": 6.0
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 88,
+                "price": 96
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 96,
+                "price": 130
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 64,
+                "price": 6.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 45,
+                "price": 5.0
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 82,
+                "price": 102
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 71,
+                "price": 156
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 47,
+                "price": 24
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 73,
+                "price": 6.8
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 10,
+                "price": 8.2
+            }
+        ]
+    },
+    {
+        "name": "Farmacias YZA",
+        "address": "Calle Leibnitz 8, Anzures",
+        "branch_number": 15,
+        "products": [
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 93,
+                "price": 6.0
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 33,
+                "price": 156
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 59,
+                "price": 70
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 98,
+                "price": 106
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 31,
+                "price": 184
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 61,
+                "price": 30
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 94,
+                "price": 50
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 45,
+                "price": 4.4
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 8,
+                "price": 92
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 29,
+                "price": 102
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 97,
+                "price": 8.2
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 5,
+                "price": 6.0
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 4,
+                "price": 6.8
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 30,
+                "price": 96
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 75,
+                "price": 140
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 48,
+                "price": 128
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 83,
+                "price": 6.8
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 41,
+                "price": 5.0
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 16,
+                "price": 24
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 1,
+                "price": 130
+            }
+        ]
+    },
+    {
+        "name": "Farmacia San Pablo",
+        "address": "Av. Cuauht\u00e9moc No. 114 y 116 A, Colonia Doctores, C.P. 06720, Alcald\u00eda Cuauht\u00e9moc, Ciudad de M\u00e9xico.",
+        "branch_number": 16,
+        "products": [
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 50,
+                "price": 6.8
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 51,
+                "price": 24
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 23,
+                "price": 184
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 85,
+                "price": 6.0
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 13,
+                "price": 156
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 60,
+                "price": 92
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 92,
+                "price": 4.4
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 60,
+                "price": 60
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 40,
+                "price": 6.8
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 52,
+                "price": 128
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 87,
+                "price": 96
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 45,
+                "price": 140
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 42,
+                "price": 70
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 91,
+                "price": 50
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 94,
+                "price": 8.2
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 37,
+                "price": 7.0
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 71,
+                "price": 6.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 74,
+                "price": 130
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 6,
+                "price": 102
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 54,
+                "price": 30
+            }
+        ]
+    },
+    {
+        "name": "Farmacias del Ahorro",
+        "address": "Belisario Dominguez 3",
+        "branch_number": 17,
+        "products": [
+            {
+                "name": "Paracetamol",
+                "inventory": 7,
+                "price": 50
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 29,
+                "price": 140
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 14,
+                "price": 8.2
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 72,
+                "price": 70
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 96,
+                "price": 6.8
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 41,
+                "price": 6.0
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 25,
+                "price": 6.0
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 94,
+                "price": 5.0
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 22,
+                "price": 30
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 0,
+                "price": 96
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 75,
+                "price": 6.8
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 92,
+                "price": 184
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 23,
+                "price": 92
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 6,
+                "price": 7.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 37,
+                "price": 130
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 51,
+                "price": 24
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 88,
+                "price": 60
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 81,
+                "price": 102
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 94,
+                "price": 128
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 14,
+                "price": 4.4
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Benavides",
+        "address": "Av. Capit\u00e1n Carlos Le\u00f3n, s/n, M\u00e9xico D.F.",
+        "branch_number": 18,
+        "products": [
+            {
+                "name": "Loratadine",
+                "inventory": 83,
+                "price": 70
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 82,
+                "price": 30
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 86,
+                "price": 8.2
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 2,
+                "price": 184
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 100,
+                "price": 96
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 100,
+                "price": 102
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 16,
+                "price": 128
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 32,
+                "price": 6.8
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 33,
+                "price": 92
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 43,
+                "price": 50
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 100,
+                "price": 4.4
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 64,
+                "price": 6.0
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 51,
+                "price": 130
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 47,
+                "price": 7.0
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 81,
+                "price": 6.8
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 60,
+                "price": 6.0
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 11,
+                "price": 24
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 83,
+                "price": 156
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 83,
+                "price": 60
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 39,
+                "price": 106
+            }
+        ]
+    },
+    {
+        "name": "Farmacias Similares",
+        "address": "Vasco de Quiroga 3900, Lomas de Santa Fe, Contadero, Cuajimalpa de Morelos, 01219 Ciudad de M\u00e9xico, CDMX, M\u00e9xico",
+        "branch_number": 19,
+        "products": [
+            {
+                "name": "Loratadine",
+                "inventory": 53,
+                "price": 70
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 48,
+                "price": 30
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 50,
+                "price": 6.8
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 70,
+                "price": 102
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 71,
+                "price": 128
+            },
+            {
+                "name": "Linagliptin (5mg)",
+                "inventory": 76,
+                "price": 24
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 27,
+                "price": 140
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 27,
+                "price": 6.0
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 75,
+                "price": 8.2
+            },
+            {
+                "name": "Carvedilol (12.5mg)",
+                "inventory": 63,
+                "price": 7.0
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 19,
+                "price": 106
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 69,
+                "price": 6.0
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 78,
+                "price": 4.4
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 62,
+                "price": 6.8
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 63,
+                "price": 156
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 24,
+                "price": 5.0
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 55,
+                "price": 60
+            },
+            {
+                "name": "Paracetamol",
+                "inventory": 78,
+                "price": 50
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 56,
+                "price": 130
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 38,
+                "price": 184
+            }
+        ]
+    },
+    {
+        "name": "Farmacias YZA",
+        "address": "Av. Luis Manuel Rojas 9, Constituci\u00f3n de 1917, Iztapalapa, 09260 Ciudad de M\u00e9xico, CDMX",
+        "branch_number": 20,
+        "products": [
+            {
+                "name": "Paracetamol",
+                "inventory": 77,
+                "price": 50
+            },
+            {
+                "name": "Loratadine",
+                "inventory": 39,
+                "price": 70
+            },
+            {
+                "name": "Sertraline (50mg)",
+                "inventory": 54,
+                "price": 156
+            },
+            {
+                "name": "Simvastatin (20mg)",
+                "inventory": 95,
+                "price": 102
+            },
+            {
+                "name": "Cefalexin (500mg)",
+                "inventory": 12,
+                "price": 6.0
+            },
+            {
+                "name": "Losartan (50mg)",
+                "inventory": 5,
+                "price": 4.4
+            },
+            {
+                "name": "Empagliflozin (25mg)",
+                "inventory": 55,
+                "price": 30
+            },
+            {
+                "name": "Amlodipine (5mg)",
+                "inventory": 84,
+                "price": 96
+            },
+            {
+                "name": "Amoxicillin (500mg)",
+                "inventory": 22,
+                "price": 6.8
+            },
+            {
+                "name": "Doxycycline (100mg)",
+                "inventory": 51,
+                "price": 5.0
+            },
+            {
+                "name": "Omeprazole (20mg)",
+                "inventory": 13,
+                "price": 106
+            },
+            {
+                "name": "Ibuprofen",
+                "inventory": 77,
+                "price": 60
+            },
+            {
+                "name": "Spironolactone (25mg)",
+                "inventory": 82,
+                "price": 6.0
+            },
+            {
+                "name": "Metformin (500mg)",
+                "inventory": 67,
+                "price": 92
+            },
+            {
+                "name": "Azithromycin (250mg)",
+                "inventory": 46,
+                "price": 8.2
+            },
+            {
+                "name": "Sildenafil (Generic Viagra)",
+                "inventory": 88,
+                "price": 6.8
+            },
+            {
+                "name": "Tadalafil (Generic Cialis)",
+                "inventory": 65,
+                "price": 184
+            },
+            {
+                "name": "Ciprofloxacin (500mg)",
+                "inventory": 22,
+                "price": 130
+            },
+            {
+                "name": "Gabapentin (300mg)",
+                "inventory": 82,
+                "price": 140
+            },
+            {
+                "name": "Metronidazole (500mg)",
+                "inventory": 38,
+                "price": 128
+            }
+        ]
+    }
+]
