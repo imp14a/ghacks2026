@@ -8,7 +8,7 @@ export interface PrescriptionsCardProps {
 export function PrescriptionsCard({ state, setState }: PrescriptionsCardProps) {
   return (
     <div className="bg-white/20 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-2xl w-full">
-      <h1 className="text-4xl font-bold text-white mb-2 text-center">Prescriptions</h1>
+      <h1 className="text-4xl font-bold text-white mb-2 text-center">Prescriptions Assistant</h1>
       <p className="text-gray-200 text-center italic mb-6">Manage your medications and dosages here. 💊</p>
       <hr className="border-white/20 my-6" />
       <div className="flex flex-col gap-3">

@@ -53,7 +53,7 @@ export default function CopilotKitPage() {
         }}
         labels={{
           title: "Prescription Assistant",
-          initial: "Hello! Upload your prescriptions and let me help you manage your meds 💊",
+          initial: "👋 Hi! I'm your Prescription Assistant. How can I help you today?",
           placeholder: "Type a message or upload an image...",
         }}
         suggestions={[

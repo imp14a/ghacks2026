@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.env
+agent
+.venv
+public
+README.md
+LICENSE
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
