@@ -1,7 +1,10 @@
-from google.adk.agents import Agent, SequentialAgent
+from google.adk.agents import Agent, BaseAgent
+from google.adk.agents.invocation_context import InvocationContext
+from google.adk.events import Event
 from google.adk.tools import google_search
 from google.adk.tools.load_web_page import load_web_page
 from .prompts import SEARCHER_INSTRUCTIONS, READER_INSTRUCTIONS
+from typing import AsyncGenerator
 
 # 1. Searcher (Uses Google Search built-in tool)
 searcher = Agent(
@@ -22,9 +25,20 @@ reader = Agent(
     tools=[load_web_page],
 )
 
-# Root agent is now a Sequence of these two steps
-root_agent = SequentialAgent(
+# Custom agent to only yield reader's events
+class FilteredMedicalAgent(BaseAgent):
+    async def _run_async_impl(
+        self, ctx: InvocationContext
+    ) -> AsyncGenerator[Event, None]:
+        # Run searcher internally but don't yield its events
+        async for _ in searcher.run_async(ctx):
+            pass
+            
+        # Run reader and yield its events to the user
+        async for event in reader.run_async(ctx):
+            yield event
+
+root_agent = FilteredMedicalAgent(
     name='library_agent',
     description='Multi-step agent for comprehensive medicine information research.',
-    sub_agents=[searcher, reader],
 )
