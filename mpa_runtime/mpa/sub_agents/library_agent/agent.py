@@ -30,9 +30,15 @@ class FilteredMedicalAgent(BaseAgent):
     async def _run_async_impl(
         self, ctx: InvocationContext
     ) -> AsyncGenerator[Event, None]:
+        # Initialize search_results to avoid "variable not found" error
+        if "search_results" not in ctx.session.state:
+            ctx.session.state["search_results"] = "No search results found yet."
+
         # Run searcher internally but don't yield its events
-        async for _ in searcher.run_async(ctx):
-            pass
+        async for event in searcher.run_async(ctx):
+            # Manually capture the final response to ensure it's in the state
+            if event.is_final_response() and event.content and event.content.parts:
+                ctx.session.state["search_results"] = event.content.parts[0].text
             
         # Run reader and yield its events to the user
         async for event in reader.run_async(ctx):
