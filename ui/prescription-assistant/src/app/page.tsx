@@ -1,116 +1,306 @@
 "use client";
 
-import { PrescriptionsCard } from "@/components/prescriptions";
-import { WeatherCard } from "@/components/weather";
+import { useRef, useState, useCallback, useEffect } from "react";
 import {
-  useCoAgent,
-  useDefaultTool,
-  useFrontendTool,
-  useHumanInTheLoop,
-  useRenderToolCall,
-} from "@copilotkit/react-core";
-import { CopilotKitCSSProperties, CopilotSidebar } from "@copilotkit/react-ui";
-import { useState } from "react";
+  CopilotChat,
+  useAgent,
+  useCopilotKit,
+} from "@copilotkit/react-core/v2";
+import "@copilotkit/react-core/v2/styles.css";
+import { ToolCallRenderer } from "./components/ToolCallRenderer";
+import { randomUUID } from "@copilotkit/shared";
 
-export interface AgentState {
-  prescriptions: string[];
-}
+/**
+ * Content part types for AG-UI multimodal messages
+ */
+type TextContent = {
+  type: "text";
+  text: string;
+};
 
+type BinaryContent = {
+  type: "binary";
+  mimeType: string;
+  data: string;
+  filename?: string;
+};
 
-export default function CopilotKitPage() {
-  const [themeColor, setThemeColor] = useState("#3b82f6"); // Medium Blue (Blue-500)
+type ContentPart = TextContent | BinaryContent;
 
-  // 🪁 Frontend Actions: https://docs.copilotkit.ai/adk/frontend-actions
-  useFrontendTool({
-    name: "setThemeColor",
-    parameters: [
-      {
-        name: "themeColor",
-        description: "The theme color to set. Make sure to pick nice colors.",
-        required: true,
-      },
-    ],
-    handler({ themeColor }) {
-      setThemeColor(themeColor);
-    },
-  });
+// Sample-specific configuration
+const AGENT_ID = "default";
+const HEADER_TITLE = "Medical Prescription Assistant";
+const HEADER_SUBTITLE = "An AI-powered medical prescription assistant";
 
-  return (
-    <main
-      style={
-        { "--copilot-kit-primary-color": themeColor } as CopilotKitCSSProperties
+export default function Page() {
+  const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
+  const [inputValue, setInputValue] = useState("");
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const selectedFilesRef = useRef<string[]>([]);
+  const { copilotkit } = useCopilotKit();
+
+  // CUSTOMIZE: Change agentId to match your agent name in agent.yaml
+  const { agent } = useAgent({ agentId: AGENT_ID });
+
+  // Keep ref in sync with state for use in callbacks
+  useEffect(() => {
+    selectedFilesRef.current = selectedFiles;
+  }, [selectedFiles]);
+
+  // Handle file selection
+  const handleFileSelect = useCallback(
+    async (event: React.ChangeEvent<HTMLInputElement>) => {
+
+      // UPLOAD file to cloud storage
+      const files = event.target.files;
+      if (!files || files.length === 0) return;
+
+      console.log(`[FileSelect] Starting upload for ${files.length} files`);
+
+      const filePromises = Array.from(files).map(async (file) => {
+        console.log(`[FileSelect] Uploading file: ${file.name} (${file.type}, ${file.size} bytes)`);
+        const formData = new FormData();
+        formData.append("file", file);
+
+        try {
+          const response = await fetch("http://localhost:8000/upload", {
+            method: "POST",
+            body: formData,
+          });
+          
+          if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`[FileSelect] Upload failed for ${file.name}:`, response.status, errorText);
+            return null;
+          }
+          
+          const data = await response.json();
+          console.log(`[FileSelect] Successfully uploaded ${file.name}. Result URL:`, data.filename);
+          return data.filename;
+        } catch (error) {
+          console.error(`[FileSelect] Error uploading ${file.name}:`, error);
+          return null;
+        }
+      });
+
+      const loadedFiles = (await Promise.all(filePromises)).filter(
+        (f): f is string => f !== null
+      );
+      
+      console.log(`[FileSelect] Completed uploads. Successfully uploaded ${loadedFiles.length} out of ${files.length} files.`);
+      setSelectedFiles((prev) => [...prev, ...loadedFiles]);
+
+      if (event.target) {
+        event.target.value = "";
       }
-    >
-      <CopilotSidebar
-        disableSystemMessage={true}
-        clickOutsideToClose={false}
-        defaultOpen={true}
-        imageUploadsEnabled={true}
-        inputFileAccept="image/*"
-        icons={{
-          uploadIcon: (
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-white/20 hover:bg-white/30 rounded-full border border-white/30 transition-all cursor-pointer">
-              <span className="text-lg">📸</span>
-              <span className="text-xs font-semibold whitespace-nowrap">New prescription</span>
-            </div>
-          ),
-        }}
-        labels={{
-          title: "Prescription Assistant",
-          initial: "👋 Hi! I'm your Prescription Assistant. How can I help you today?",
-          placeholder: "Type a message or upload an image...",
-        }}
-        suggestions={[
-          {
-            title: "Add new prescription",
-            message: "I want to add a new prescription.",
-          },
-          {
-            title: "Check my current prescriptions",
-            message: "What are my current prescriptions?",
-          },
-          {
-            title: "Check possible side effects",
-            message: "What are the possible side effects for my prescriptions?",
-          },
-        ]}
-      >
-        <YourMainContent themeColor={themeColor} />
-      </CopilotSidebar>
-    </main>
-  );
-}
-
-function YourMainContent({ themeColor }: { themeColor: string }) {
-  // 🪁 Shared State: https://docs.copilotkit.ai/adk/shared-state
-  const { state, setState } = useCoAgent<AgentState>({
-    name: "my_agent",
-    initialState: {
-      prescriptions: [
-        "Aspirin - 100mg - Daily",
-      ],
     },
-  });
-
-  //🪁 Generative UI: https://docs.copilotkit.ai/adk/generative-ui
-  useRenderToolCall(
-    {
-      name: "get_weather",
-      description: "Get the weather for a given location.",
-      parameters: [{ name: "location", type: "string", required: true }],
-      render: ({ args, result }) => {
-        return <WeatherCard location={args.location} themeColor={themeColor} />;
-      },
-    },
-    [themeColor],
+    []
   );
+
+  // Handle clipboard paste for images
+  useEffect(() => {
+    const handlePaste = async (e: ClipboardEvent) => {
+      const items = Array.from(e.clipboardData?.items || []);
+      const imageItems = items.filter((item) => item.type.startsWith("image/"));
+      if (imageItems.length === 0) return;
+
+      console.log(`[Paste] Detected ${imageItems.length} pasted images`);
+      e.preventDefault();
+
+      const imagePromises = imageItems.map(async (item) => {
+        const file = item.getAsFile();
+        if (!file) return null;
+
+        console.log(`[Paste] Uploading pasted image: ${file.name} (${file.type})`);
+        const formData = new FormData();
+        formData.append("file", file);
+
+        try {
+          const response = await fetch("http://localhost:8000/upload", {
+            method: "POST",
+            body: formData,
+          });
+          
+          if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`[Paste] Upload failed:`, response.status, errorText);
+            return null;
+          }
+          
+          const data = await response.json();
+          console.log(`[Paste] Successfully uploaded pasted image. Result URL:`, data.filename);
+          return data.filename;
+        } catch (error) {
+          console.error(`[Paste] Error uploading pasted image:`, error);
+          return null;
+        }
+      });
+
+      const loadedImages = (await Promise.all(imagePromises)).filter(
+        (img): img is string => img !== null
+      );
+      
+      console.log(`[Paste] Completed uploads. Successfully uploaded ${loadedImages.length} images.`);
+      setSelectedFiles((prev) => [...prev, ...loadedImages]);
+    };
+
+    document.addEventListener("paste", handlePaste);
+    return () => document.removeEventListener("paste", handlePaste);
+  }, []);
+
+  // Remove a file from queue
+  const removeFile = useCallback((index: number) => {
+    const fileToRemove = selectedFiles[index];
+    console.log(`[RemoveFile] Removing file at index ${index}:`, fileToRemove);
+    setSelectedFiles((prev) => prev.filter((_, i) => i !== index));
+  }, [selectedFiles]);
+
+  // Handle message submission - ALWAYS use our handler for full control
+  const handleSubmitMessage = useCallback(
+    async (text: string) => {
+      
+      console.log("[SubmitMessage] Attempting to submit message:", { text, fileCount: selectedFilesRef.current.length });
+
+      if (!agent) {
+        console.error("[SubmitMessage] No agent available");
+        return;
+      }
+
+      const currentFiles = selectedFilesRef.current;
+      const hasText = text.trim().length > 0;
+      const hasFiles = currentFiles.length > 0;
+
+      if (!hasText && !hasFiles) {
+        console.warn("[SubmitMessage] Empty message and no files, ignoring submission");
+        return;
+      }
+
+      // Build content - use array format when files present, string otherwise
+      let content: string | ContentPart[];
+
+      if (hasFiles) {
+        const contentParts: ContentPart[] = [];
+
+        if (hasText) {
+          contentParts.push({ type: "text", text: text.trim() });
+        }
+
+        for (const fileUrl of currentFiles) {
+          contentParts.push({
+            type: "text",
+            text: fileUrl,
+          });
+        }
+
+        content = contentParts;
+
+        console.log("[SubmitMessage] Built multimodal content:", JSON.stringify(content, null, 2));
+      } else {
+        content = text.trim();
+        console.log("[SubmitMessage] Built text-only content:", content);
+      }
+
+      // Clear state
+      setSelectedFiles([]);
+      setInputValue("");
+
+      // Create and send message
+      const message = {
+        id: randomUUID(),
+        role: "user" as const,
+        content,
+      };
+
+      console.log("[SubmitMessage] Adding message to agent:", message.id);
+      agent.addMessage(message);
+      
+      try {
+        console.log("[SubmitMessage] Running agent...");
+        await copilotkit.runAgent({ agent });
+        console.log("[SubmitMessage] Agent run completed successfully");
+      } catch (error) {
+        console.error("[SubmitMessage] Error running agent:", error);
+      }
+    },
+    [agent, copilotkit]
+  );
+
+  // Stop generation
+  const handleStop = useCallback(() => {
+    console.log("[Stop] Requesting agent to stop");
+    agent?.abortRun?.();
+  }, [agent]);
+
+  const messages = agent?.messages ?? [];
+  const isRunning = agent?.isRunning ?? false;
 
   return (
-    <div
-      style={{ backgroundColor: themeColor }}
-      className="h-screen flex justify-center items-center flex-col transition-colors duration-300"
-    >
-      <PrescriptionsCard state={state} setState={setState} />
+    <div className="flex flex-col h-screen">
+      <ToolCallRenderer />
+
+      <header className="border-b border-zinc-200 dark:border-zinc-800 px-6 py-4 bg-white dark:bg-zinc-900">
+        <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
+          {HEADER_TITLE}
+        </h1>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          {HEADER_SUBTITLE}
+        </p>
+      </header>
+
+      <main className="flex-1 overflow-hidden flex flex-col">
+        {/* File upload queue */}
+        {selectedFiles.length > 0 && (
+          <div className="flex flex-wrap gap-2 p-3 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800">
+            {selectedFiles.map((file, index) => (
+              <div
+                key={index}
+                className="relative inline-block w-16 h-16 rounded-lg overflow-hidden border border-zinc-300 dark:border-zinc-600"
+              >
+                <div className="w-full h-full flex items-center justify-center bg-zinc-200 dark:bg-zinc-700">
+                  <span className="text-xs text-zinc-600 dark:text-zinc-300 text-center px-1 break-all line-clamp-3">
+                    {file.split('/').pop() || "FILE"}
+                  </span>
+                </div>
+                <button
+                  onClick={() => removeFile(index)}
+                  className="absolute top-0.5 right-0.5 w-5 h-5 flex items-center justify-center bg-black/60 text-white rounded-full text-xs hover:bg-black/80"
+                  aria-label="Remove file"
+                >
+                  x
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Hidden file input */}
+        <input
+          type="file"
+          multiple
+          ref={fileInputRef}
+          onChange={handleFileSelect}
+          accept="image/*,application/pdf,.doc,.docx,.txt"
+          className="hidden"
+        />
+
+        {/* CopilotChatView - full control over messages and input */}
+        <CopilotChat.View
+          className="flex-1"
+          messages={messages}
+          isRunning={isRunning}
+          input={{
+            value: inputValue,
+            onChange: setInputValue,
+            onSubmitMessage: handleSubmitMessage,
+            onStop: handleStop,
+            isRunning,
+            onAddFile: () => {
+              console.log("[Input] Triggering file input click");
+              fileInputRef.current?.click();
+            },
+          }}
+        />
+      </main>
     </div>
   );
 }
