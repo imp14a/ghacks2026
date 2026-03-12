@@ -1,4 +1,4 @@
-import { AgentState } from "@/lib/types";
+import { AgentState } from "@/app/page";
 
 export interface PrescriptionsCardProps {
   state: AgentState;

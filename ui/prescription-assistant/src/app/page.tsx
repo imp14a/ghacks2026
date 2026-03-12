@@ -2,7 +2,6 @@
 
 import { PrescriptionsCard } from "@/components/prescriptions";
 import { WeatherCard } from "@/components/weather";
-import { AgentState } from "@/lib/types";
 import {
   useCoAgent,
   useDefaultTool,
@@ -12,6 +11,11 @@ import {
 } from "@copilotkit/react-core";
 import { CopilotKitCSSProperties, CopilotSidebar } from "@copilotkit/react-ui";
 import { useState } from "react";
+
+export interface AgentState {
+  prescriptions: string[];
+}
+
 
 export default function CopilotKitPage() {
   const [themeColor, setThemeColor] = useState("#3b82f6"); // Medium Blue (Blue-500)
