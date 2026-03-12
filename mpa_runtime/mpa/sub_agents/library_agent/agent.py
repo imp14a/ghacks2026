@@ -8,5 +8,5 @@ root_agent = Agent(
     name='library_agent',
     description='Agent for searching medical information from PubMed and other sources.',
     instruction=SYSTEM_INSTRUCTIONS,
-    tools=[google_search, load_web_page],
+    # tools=[google_search, load_web_page],
 )

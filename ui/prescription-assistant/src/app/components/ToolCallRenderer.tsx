@@ -25,15 +25,15 @@ export function ToolCallRenderer() {
       return (
         <div
           className={`
-            my-2 rounded-lg border p-3 text-sm
-            ${isInProgress ? "border-blue-300 bg-blue-50 dark:border-blue-700 dark:bg-blue-950" : ""}
-            ${isComplete ? "border-green-300 bg-green-50 dark:border-green-700 dark:bg-green-950" : ""}
+            my-2 rounded-lg p-3 text-sm
+            ${isInProgress ? "bg-blue-50 dark:bg-blue-950" : ""}
+            ${isComplete ? "bg-green-50 dark:bg-green-950" : ""}
           `}
         >
           {/* Header with tool name and status */}
           <div className="flex items-center gap-2 mb-2">
             <span className="text-lg">
-              {isInProgress ? "⏳" : isComplete ? "✅" : "🔧"}
+              {isInProgress ? "⏳" : isComplete ? "✔️" : "🔧"}
             </span>
             <span className="font-semibold text-zinc-800 dark:text-zinc-200">
               {formatToolName(name)}

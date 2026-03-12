@@ -30,7 +30,7 @@ type ContentPart = TextContent | BinaryContent;
 // Sample-specific configuration
 const AGENT_ID = "default";
 const HEADER_TITLE = "Medical Prescription Assistant";
-const HEADER_SUBTITLE = "An AI-powered medical prescription assistant";
+const HEADER_SUBTITLE = "An AI-powered medical prescription assistant- gHacks2026 - Argo Team";
 
 export default function Page() {
   const [selectedFiles, setSelectedFiles] = useState<string[]>([]);
@@ -63,17 +63,17 @@ export default function Page() {
         formData.append("file", file);
 
         try {
-          const response = await fetch("http://localhost:8000/upload", {
+          const response = await fetch("https://mpa-runtime-969700488226.us-central1.run.app/upload", {
             method: "POST",
             body: formData,
           });
-          
+
           if (!response.ok) {
             const errorText = await response.text();
             console.error(`[FileSelect] Upload failed for ${file.name}:`, response.status, errorText);
             return null;
           }
-          
+
           const data = await response.json();
           console.log(`[FileSelect] Successfully uploaded ${file.name}. Result URL:`, data.filename);
           return data.filename;
@@ -86,7 +86,7 @@ export default function Page() {
       const loadedFiles = (await Promise.all(filePromises)).filter(
         (f): f is string => f !== null
       );
-      
+
       console.log(`[FileSelect] Completed uploads. Successfully uploaded ${loadedFiles.length} out of ${files.length} files.`);
       setSelectedFiles((prev) => [...prev, ...loadedFiles]);
 
@@ -116,17 +116,17 @@ export default function Page() {
         formData.append("file", file);
 
         try {
-          const response = await fetch("http://localhost:8000/upload", {
+          const response = await fetch("https://mpa-runtime-969700488226.us-central1.run.app/upload", {
             method: "POST",
             body: formData,
           });
-          
+
           if (!response.ok) {
             const errorText = await response.text();
             console.error(`[Paste] Upload failed:`, response.status, errorText);
             return null;
           }
-          
+
           const data = await response.json();
           console.log(`[Paste] Successfully uploaded pasted image. Result URL:`, data.filename);
           return data.filename;
@@ -139,7 +139,7 @@ export default function Page() {
       const loadedImages = (await Promise.all(imagePromises)).filter(
         (img): img is string => img !== null
       );
-      
+
       console.log(`[Paste] Completed uploads. Successfully uploaded ${loadedImages.length} images.`);
       setSelectedFiles((prev) => [...prev, ...loadedImages]);
     };
@@ -158,7 +158,7 @@ export default function Page() {
   // Handle message submission - ALWAYS use our handler for full control
   const handleSubmitMessage = useCallback(
     async (text: string) => {
-      
+
       console.log("[SubmitMessage] Attempting to submit message:", { text, fileCount: selectedFilesRef.current.length });
 
       if (!agent) {
@@ -213,7 +213,7 @@ export default function Page() {
 
       console.log("[SubmitMessage] Adding message to agent:", message.id);
       agent.addMessage(message);
-      
+
       try {
         console.log("[SubmitMessage] Running agent...");
         await copilotkit.runAgent({ agent });
@@ -288,6 +288,21 @@ export default function Page() {
           className="flex-1"
           messages={messages}
           isRunning={isRunning}
+          suggestions={[{
+            title: "I have a doubt about my medicines",
+            message: "Analyze my presciptions to solve my questions",
+            isLoading: false
+          },
+          {
+            title: "Generate the faster route to buy my medicines",
+            message: "Extract the information of my prescription, seach in the inventorty and generate the fastest route to buy my medicines",
+            isLoading: false
+          },
+          {
+            title: "Generate the faster route to buy my medicines",
+            message: "Extract the information of my prescription, seach in the inventorty and generate the fastest route to buy my medicines",
+            isLoading: false
+          }]}
           input={{
             value: inputValue,
             onChange: setInputValue,
