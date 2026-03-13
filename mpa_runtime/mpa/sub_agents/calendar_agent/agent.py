@@ -22,8 +22,8 @@ root_agent = Agent(
     tools=[get_today_date, get_timezone, GoogleApiToolset(
         api_name="calendar",
         api_version="v3",
-        client_id=os.getenv("GOOGLE_CLIENT_ID","969700488226-raf9b2h0oao9q8p5f63sstbpgmkdimke.apps.googleusercontent.com"),
-        client_secret=os.getenv("GOOGLE_CLIENT_SECRET","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"),
+        client_id=os.getenv("GOOGLE_CLIENT_ID"),
+        client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
         
     )],
 )
